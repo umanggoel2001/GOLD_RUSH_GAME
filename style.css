@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body{
+    margin: 0%;
+    background-image: url('https://wallpapercave.com/wp/wp9262085.jpg');
+    
+     background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100%;
+   
+    font-family: 'Odibee Sans', cursive;
+    
+}
+.cursor{
+    position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ 
+ z-index:1;
+ pointer-events: none;
+
+
+
+}
+.coin{
+position: fixed;
+ top: -50%;
+ left:50%;
+transform: translate(-50%,-50%);
+z-index:0 ; 
+animation:   mymove 3s infinite;
+}
+
+.score{
+    position: fixed;
+    top: 20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:4rem;
+    opacity: 0.9;
+    border-radius: 30%;
+    padding:5px;
+    color: white;
+    background-color: black;
+}
+.timing{
+    margin-right: 10px;
+    position: fixed;
+    top:0%;
+    right:0%;
+   color: #FFD700;
+   border: 2px solid #FFD700 ;
+   border-radius: 50%;
+    margin-top: 20px;
+    padding: 5PX;
+    font-size: 2rem;
+
+}
+.highscore{
+bottom: 0%;
+right: 0%;
+text-transform: uppercase;   
+position: fixed;
+margin: 20px;
+color: #FFD700;
+padding:5px;
+border:2px solid #FFD700;
+}
+
+.landing{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #734ae8;
+background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
+    z-index: 2;
+    cursor: default;
+    transition: all 0.1s ease;
+}
+
+
+ .landing .but{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 3px solid #FFD700 ;
+    cursor: pointer;
+    transition: all 0.1s ease;  
+    color:#FFD700 ;  
+
+}
+
+/* placing hover */
+
+.landing .but:hover{
+    padding:20px;
+}
+img{
+    user-select: none;
+}
+
+
+@keyframes mymove {
+    50% {transform: rotate(180deg);}
+  }
